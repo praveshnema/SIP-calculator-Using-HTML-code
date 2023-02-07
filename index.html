@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SIP Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 mx-auto py-5">
+			<div class="card">
+ 	<div class="card-header bg-primary text-white text-center font-weight-bold">
+ 		SIP Calculator
+ 	</div>
+ 	
+ 			<div class="form-group">
+ 				<input type="text" name="invesmet" placeholder="Monthly Investment" required="" class="form-control" id="invesmet">
+ 			</div>
+ 			<div class="form-group">
+ 				<input type="text" name="return_rate" placeholder="Expected Return Rate" required="" class="form-control" id="return_rate">
+ 			</div>
+ 			<div class="form-group">
+ 				<input type="text" name="year" placeholder="Time Period" required="" class="form-control" id="year">
+ 			</div>
+ 			<div class="form-group text-center">
+ 				<input type="submit" name="submit" value="Calculate" onclick="add()">
+ 			</div>
+			 <div class="card-footer bg-white">
+				<table class="table table-bordered table-hover">
+					Total Amount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=<input id="futurevalue"> <br><br>
+					return amount &nbsp;&nbsp;&nbsp;&nbsp;=<input id="est_rtn"> <br><br>
+					Invested amount =<input id="invesmet_amonut"><br><br>
+				</table>
+			</div>
+ 		</form>
+ 	</div>
+ 	
+ </div>
+		</div>
+	</div>
+ 
+</div>
+<script src="code.js"></script>
+</body>
+</html>
+
